@@ -1,0 +1,34 @@
+10
+
+dir
+101
+http://xingming.wicp.net:81/svn/TE-SW301-V100/8%E3%80%81code/hTool/src/com/topeastic/hadoop/task
+http://xingming.wicp.net:81/svn/TE-SW301-V100
+
+
+
+2016-04-01T08:31:40.862455Z
+94
+linghuiguo
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+58468075-8395-984a-af5e-c207085f8867
+
+bean
+dir
+
+dao
+dir
+

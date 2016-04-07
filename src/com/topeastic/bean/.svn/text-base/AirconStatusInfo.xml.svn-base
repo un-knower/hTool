@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="gb2312" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap >
+
+<typeAlias alias="airconStatusInfo" type="com.topeastic.bean.AirconStatusInfo"/> 
+
+<resultMap id="airconStatusResult" class="airconStatusInfo">
+     <result property="id" column="id" jdbcType="VARCHAR"/> 
+     <result property="ctrlTime" column="ctrl_time" jdbcType="VARCHAR"/>
+     <result property="userId" column="user_id" jdbcType="VARCHAR"/>
+     <result property="saModel" column="sa_model" jdbcType="VARCHAR"/>
+     <result property="moduleNo" column="module_no" jdbcType="VARCHAR"/>
+     <result property="saAddress" column="saAddress" jdbcType="VARCHAR"/>
+     <result property="insideTemp" column="inside_temp" jdbcType="INT"/>
+     <result property="outsideTemp" column="outside_temp" jdbcType="INT"/> 
+     <result property="electric" column="electric" jdbcType="INT"/>
+     <result property="exhaustTemp" column="exhaust_temp" jdbcType="INT"/>
+       
+    
+ </resultMap>
+
+     <select id="queryAllAirconStatusInfo" parameterClass="airconStatusInfo" resultMap="airconStatusResult">
+        select * from aircon_status_info
+    </select> 
+ 
+     <delete id="deleteAirconStatusInfoById" parameterClass="String">
+        delete from aircon_status_info where id = #id#
+     </delete>
+     
+     <insert id="insertAirconStatusInfo" parameterClass="airconStatusInfo" >
+		 insert into aircon_status_info(id,ctrl_time,user_id,sa_model,module_no,saAddress,inside_temp,outside_temp,exhaust_temp,electric)
+		 values(#id#,#ctrlTime#,#userId#,#saModel#,#moduleNo#,#saAddress#,#insideTemp#,#outsideTemp#,#exhaustTemp#,#electric#)
+	 </insert> 
+
+    <select id="selectAirconStatusInfoById" parameterClass="java.lang.String" resultMap="airconStatusResult">
+         select * from aircon_status_info where id = #id#
+    </select> 
+    
+    <update id="updateAirconStatusInfo" parameterClass="com.topeastic.bean.AirconStatusInfo" >
+        update aircon_status_info set 
+        ctrl_time=#ctrlTime#,
+        user_id=#userId#,
+        sa_model=#saModel#,
+        module_no=#moduleNo#,
+        saAddress=#saAddress#,
+        inside_temp=#insideTemp#,
+        outside_temp=#outsideTemp#,
+        exhaust_temp=#exhaustTemp#，
+        electric=#electric#
+        where id = #id#
+    </update>
+    
+	<!-- <insert id="insertAir" parameterClass="airconCtrlInfo">  
+    <![CDATA[insert into aircon_ctrl_info(auto_id,ctrl_time,user_id,sa_model,module_no,saAddress,inside_temp,outside_temp,inside_duhm,outside_duhm,responeCommand,electric,is_send) values(#autoId#,#ctrlTime#,#userId#,#saModel#,#moduleNo#,#saAddress#,#insideTemp#,#outsideTemp#,#insideDuhm#,#outsideDuhm#,#responeCommand#,#electric#,#isSend#)]]>
+		<selectKey resultClass="int" keyProperty="auto_id">  
+       <![CDATA[SELECT LAST_INSERT_ID() AS auto_id ]]>
+		</selectKey>
+	</insert>  -->
+
+</sqlMap>
+
+
+
+
+
+
+

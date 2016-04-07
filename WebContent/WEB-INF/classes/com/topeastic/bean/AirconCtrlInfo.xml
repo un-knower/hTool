@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="gb2312" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap >
+
+<typeAlias alias="airconCtrlInfo" type="com.topeastic.bean.AirconCtrlInfo"/> 
+
+<resultMap id="airconCtrlIResult" class="airconCtrlInfo">
+     <result property="autoId" column="auto_id" jdbcType="VARCHAR"/> 
+     <result property="ctrlTime" column="ctrl_time" jdbcType="VARCHAR"/>
+     <result property="userId" column="user_id" jdbcType="VARCHAR"/>
+     <result property="saModel" column="sa_model" jdbcType="VARCHAR"/>
+     <result property="moduleNo" column="module_no" jdbcType="VARCHAR"/>
+     <result property="saAddress" column="saAddress" jdbcType="VARCHAR"/>
+     <result property="insideTemp" column="inside_temp" jdbcType="INT"/>
+     <result property="outsideTemp" column="outside_temp" jdbcType="INT"/> 
+     <result property="insideDuhm" column="inside_duhm" jdbcType="INT"/>
+     <result property="outsideDuhm" column="outside_duhm" jdbcType="INT"/>
+     
+     <result property="electric" column="electric" jdbcType="INT"/>
+     <result property="isSend" column="is_send" jdbcType="CHAR"/>
+       
+    
+ </resultMap>
+
+     <select id="queryAll" parameterClass="airconCtrlInfo" resultMap="airconCtrlIResult">
+        select * from aircon_ctrl_info
+    </select> 
+ 
+     <delete id="deleteAir" parameterClass="String">
+        delete from aircon_ctrl_info where auto_id = #autoId#
+     </delete>
+     
+     <insert id="insertAir" parameterClass="airconCtrlInfo" >
+		 insert into aircon_ctrl_info(auto_id,ctrl_time,user_id,sa_model,module_no,saAddress,inside_temp,outside_temp,inside_duhm,outside_duhm,electric,is_send)
+		 values(#autoId#,#ctrlTime#,#userId#,#saModel#,#moduleNo#,#saAddress#,#insideTemp#,#outsideTemp#,#insideDuhm#,#outsideDuhm#,,#electric#,#isSend#)
+	 </insert> 
+
+    <select id="selectAirById" parameterClass="java.lang.String" resultMap="airconCtrlIResult">
+         select * from aircon_ctrl_info where auto_id = #autoId#
+    </select> 
+    
+    <update id="updateAir" parameterClass="com.topeastic.bean.AirconCtrlInfo" >
+        update aircon_ctrl_info set 
+        ctrl_time=#ctrlTime#,
+        user_id=#userId#,
+        sa_model=#saModel#,
+        module_no=#moduleNo#,
+        saAddress=#saAddress#,
+        inside_temp=#insideTemp#,
+        outside_temp=#outsideTemp#,
+        inside_duhm=#insideDuhm#,
+        outside_duhm=#outsideDuhm#,
+        electric=#electric#,
+        is_send=#isSend#
+        where auto_id = #autoId#
+    </update>
+    
+	<!-- <insert id="insertAir" parameterClass="airconCtrlInfo">  
+    <![CDATA[insert into aircon_ctrl_info(auto_id,ctrl_time,user_id,sa_model,module_no,saAddress,inside_temp,outside_temp,inside_duhm,outside_duhm,responeCommand,electric,is_send) values(#autoId#,#ctrlTime#,#userId#,#saModel#,#moduleNo#,#saAddress#,#insideTemp#,#outsideTemp#,#insideDuhm#,#outsideDuhm#,#responeCommand#,#electric#,#isSend#)]]>
+		<selectKey resultClass="int" keyProperty="auto_id">  
+       <![CDATA[SELECT LAST_INSERT_ID() AS auto_id ]]>
+		</selectKey>
+	</insert>  -->
+
+</sqlMap>
+
+
+
+
+
+
+

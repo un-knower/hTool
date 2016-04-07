@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/TE-SW301-V100/!svn/ver/19/8%E3%80%81code/hTool/src/com/topeastic/hadoop/task/dao
+END
+JRedisPoolConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/TE-SW301-V100/!svn/ver/19/8%E3%80%81code/hTool/src/com/topeastic/hadoop/task/dao/JRedisPoolConfig.java
+END
+RedisDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/TE-SW301-V100/!svn/ver/19/8%E3%80%81code/hTool/src/com/topeastic/hadoop/task/dao/RedisDao.java
+END
+HdfsTaskDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hadoop/task/dao/HdfsTaskDao.java
+END

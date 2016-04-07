@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common
+END
+HisenseDeviceRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/HisenseDeviceRequest.java
+END
+DeviceRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/DeviceRequest.java
+END
+MessageEnum.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/MessageEnum.java
+END
+DeviceResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/DeviceResponse.java
+END
+HisenseProxyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/HisenseProxyClass.java
+END
+HisenseDeviceResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/HisenseDeviceResponse.java
+END
+HisenseDevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/HisenseDevice.java
+END
+HisenseDeviceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/HisenseDeviceImpl.java
+END
+Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/common/Test.java
+END

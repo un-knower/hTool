@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/TE-SW301-V100/!svn/ver/56/8%E3%80%81code/hTool/src/com/topeastic/test
+END
+JdbcTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TE-SW301-V100/!svn/ver/49/8%E3%80%81code/hTool/src/com/topeastic/test/JdbcTest.java
+END
+Usertest.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TE-SW301-V100/!svn/ver/56/8%E3%80%81code/hTool/src/com/topeastic/test/Usertest.java
+END
+HdfsUtilsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/TE-SW301-V100/!svn/ver/56/8%E3%80%81code/hTool/src/com/topeastic/test/HdfsUtilsTest.java
+END
+WordCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TE-SW301-V100/!svn/ver/56/8%E3%80%81code/hTool/src/com/topeastic/test/WordCount.java
+END
+DbUtilsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/test/DbUtilsTest.java
+END
+BehaviorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/TE-SW301-V100/!svn/ver/49/8%E3%80%81code/hTool/src/com/topeastic/test/BehaviorTest.java
+END
+ShellTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/test/ShellTest.java
+END

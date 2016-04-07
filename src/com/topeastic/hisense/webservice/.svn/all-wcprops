@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/webservice
+END
+CompareInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/webservice/CompareInterceptor.java
+END
+Student.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/webservice/Student.java
+END
+StudentImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/webservice/StudentImpl.java
+END
+BeforeAdvice.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/webservice/BeforeAdvice.java
+END
+AfterAdvice.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/TE-SW301-V100/!svn/ver/14/8%E3%80%81code/hTool/src/com/topeastic/hisense/webservice/AfterAdvice.java
+END

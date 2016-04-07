@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="gb2312" standalone="no"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap >
+
+<typeAlias alias="hdfsTask" type="com.topeastic.hadoop.task.bean.HdfsTask"/> 
+
+<resultMap id="hdfsTaskResult" class="hdfsTask">
+     <result property="id" column="id" jdbcType="VARCHAR"/> 
+     <result property="taskType" column="task_type" jdbcType="VARCHAR"/>
+     <result property="taskStatus" column="task_status" jdbcType="VARCHAR"/>
+       
+    
+ </resultMap>
+
+     <select id="queryHdfsTaskByType" parameterClass="hdfsTask" resultMap="hdfsTaskResult">
+        select * from HADOOP_HDFS_TASK where 1=1
+        <dynamic >
+       	<isNotEmpty prepend=" and " property = "taskType">
+       	  <![CDATA[
+         	task_type=#taskType#
+          ]]>
+		 </isNotEmpty>
+	 
+	</dynamic>
+    </select> 
+
+    <select id="queryHdfsTaskById" parameterClass="java.lang.String" resultMap="hdfsTaskResult">
+         select * from HADOOP_HDFS_TASK where id = #id#
+    </select> 
+    
+    <update id="updateHdfsTask" parameterClass="hdfsTask">
+    <![CDATA[ 
+    UPDATE HADOOP_HDFS_TASK 
+    SET
+    	id = #id#
+	 ]]>			
+	<isNotEmpty prepend="," property="taskType">
+	 		<![CDATA[
+     	   		task_type = #taskType#
+     	   		]]>
+	</isNotEmpty>
+	<isNotEmpty prepend="," property="taskStatus">
+			<![CDATA[
+     	    	task_status = #taskStatus#
+     	    	]]>
+	</isNotEmpty>
+	<![CDATA[
+    WHERE id = #id#
+    ]]>
+    
+</update>
+
+</sqlMap>
+
+
+
+
+
+
+
